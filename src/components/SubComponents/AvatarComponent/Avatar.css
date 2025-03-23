@@ -1,0 +1,52 @@
+.user-avatar {
+    text-align: center;
+    padding: 10px;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+}
+
+.user-avatar:hover {
+    transform: scale(1.05);
+}
+
+.avatar-image {
+    object-fit: cover;
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+    margin: 5px;
+}
+
+.user-name {
+    color: var(--text-color);
+    font-weight: 500;
+    font-size: 16px;
+}
+
+/* Responsive Design */
+
+@media (max-width: 768px) {
+    .avatar-image {
+        height: 80px;
+        width: 80px;
+    }
+
+    .user-name {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 767px) and (min-width: 320px) {
+    .user-avatar {
+        padding: 8px;
+    }
+
+    .user-name {
+        font-size: 12px;
+    }
+
+    .avatar-image {
+        height: 70px;
+        width: 70px;
+    }
+}
